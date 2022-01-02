@@ -30,7 +30,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'honza/vim-snippets'
 	Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
-	Plug 'ray-x/lsp_signature.nvim'
 	-- UI
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'kyazdani42/nvim-tree.lua'
