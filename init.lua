@@ -1,0 +1,8 @@
+require('plugins')
+require('basic')
+require('ale')
+require('lsp')
+require('utils')
+require('ui')
+require('diagnostic')
+require('keymaps')
