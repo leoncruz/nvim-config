@@ -1,19 +1,17 @@
 local map = vim.api.nvim_set_keymap
 
-vim.g.mapleader = ' '
-
 -- Geral
-map("n", "<C-A>", ":NvimTreeToggle<CR>", { silent = true })
-map("n", "<leader>v ", ":VisitTestFile<CR>", { silent = true })
+map("n", "<C-A>","<cmd>NvimTreeToggle<CR>", { silent = true })
+map("n", "<leader>v", "<cmd>VisitTestFile<CR>", { silent = true })
 
 -- Terminal
-map("n", "<leader>T ", ":tabnew term://zsh<CR>", { silent = true })
-map("n", "<leader>b ", ":belowright split term://zsh<CR>", { silent = true })
+map("n", "<leader>T", "<cmd>tabnew term://zsh<CR>", { silent = true })
+map("n", "<leader>b", "<cmd>belowright split term://zsh<CR>", { silent = true })
 
 -- vim-test
-map("n", "<leader>s ", ":TestSuite<CR>", { silent = true })
-map("n", "<leader>f ", ":TestFile<CR>", { silent = true })
-map("n", "<leader>t ", ":TestNearest<CR>", { silent = true })
+map("n", "<leader>s", "<cmd>TestSuite<CR>", { silent = true })
+map("n", "<leader>f", "<cmd>TestFile<CR>", { silent = true })
+map("n", "<leader>t", "<cmd>TestNearest<CR>", { silent = true })
 
 -- Lspsaga
 map("v", "<leader>ca", ":<C-U>Lspsaga range_code_action<CR>", { silent = true })
