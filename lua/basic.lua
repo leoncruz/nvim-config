@@ -1,6 +1,8 @@
 -- Some basic configurations
 local telescope = require('telescope')
 
+vim.g.mapleader = ' '
+
 vim.g.python3_host_prog = '~/.asdf/shims/python'
 
 vim.o.number = true
