@@ -23,7 +23,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'
 
-	Plug 'tami5/lspsaga.nvim'
+	Plug ('tami5/lspsaga.nvim', { branch = 'nvim6.0' })
 
 	Plug 'SirVer/ultisnips'
 	Plug 'honza/vim-snippets'
