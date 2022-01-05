@@ -35,4 +35,4 @@ map("n", "<M-9>", "9gt", {})
 map("n", "<M-0>", ":tablast", {})
 
 -- LSP
-map("n", "gd", ":lua vim.lsp.buf.definition()<CR>", {})
+map("n", "gd", ":Lspsaga lsp_finder<CR>", {})
