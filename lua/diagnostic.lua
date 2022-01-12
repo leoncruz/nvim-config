@@ -5,4 +5,4 @@ vim.diagnostic.config({
 
 -- use Lspsaga diagnostic
 vim.o.updatetime = 250
-vim.cmd [[ autocmd CursorHold,CursorHoldI * :Lspsaga show_line_diagnostics ]]
+vim.cmd [[ autocmd CursorHold * :Lspsaga show_line_diagnostics ]]
