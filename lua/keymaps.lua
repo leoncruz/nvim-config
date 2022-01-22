@@ -5,8 +5,8 @@ map("n", "<C-A>","<cmd>NvimTreeToggle<CR>", {})
 map("n", "<leader>v", "<cmd>VisitTestFile<CR>", {})
 
 -- Terminal
-map("n", "<leader>T", "<cmd>tabnew term://zsh<CR>", {})
-map("n", "<leader>b", "<cmd>belowright split term://zsh<CR>", {})
+map("n", "<leader>T", "<cmd>tabnew term://fish<CR>", {})
+map("n", "<leader>b", "<cmd>belowright split term://fish<CR>", {})
 map("t", "ii", "<C-\\><C-N>", {})
 
 -- vim-test
