@@ -3,6 +3,8 @@ local map = vim.api.nvim_set_keymap
 -- Geral
 map("n", "<C-A>","<cmd>NvimTreeToggle<CR>", {})
 map("n", "<leader>v", "<cmd>VisitTestFile<CR>", {})
+map("n", "<C-[>", "<ESC>", {})
+map("v", "<C-[>", "<ESC>", {})
 
 -- Terminal
 map("n", "<leader>T", "<cmd>tabnew term://fish<CR>", {})
