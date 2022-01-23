@@ -1,6 +1,4 @@
 -- Some basic configurations
-local telescope = require('telescope')
-
 vim.g.mapleader = ' '
 
 vim.g.python3_host_prog = '~/.asdf/shims/python'
@@ -29,12 +27,3 @@ vim.g.blamer_enabled = 1
 vim.g.blamer_delay = 500
 
 vim.g.UltiSnipsExpandTrigger = "<C-z>"
-
-telescope.setup {
-	defaults =  {
-		file_ignore_patterns = {
-			'node_modules', '.elixir_ls', '_build', 'deps', '__pycache__',
-			'.idea', '.dart_tool', 'build'
-		}
-	}
-}
