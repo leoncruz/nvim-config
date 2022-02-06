@@ -1,9 +1,10 @@
 local flutter_tools = require'flutter-tools'
 local telescope = require('telescope')
+local cmp_nvim_ultisnips = require('cmp_nvim_ultisnips')
 
 flutter_tools.setup {
 	dev_log = {
-		open_cmd = 'belowright split'
+		open_cmd = 'tabedit'
 	}
 }
 
@@ -15,3 +16,7 @@ telescope.setup {
 		}
 	}
 }
+
+cmp_nvim_ultisnips.setup({
+	filetype_source = 'ultisnips_default'
+})
