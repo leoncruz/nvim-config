@@ -20,5 +20,5 @@ vim.g.ale_fixers = {
   dart = { 'dart-format' },
 }
 
-vim.g.ale_sign_error = '⛔'
-vim.g.ale_sign_warning = '⚠'
+vim.g.ale_sign_error = ''
+vim.g.ale_sign_warning = ''
