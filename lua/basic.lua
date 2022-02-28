@@ -11,6 +11,7 @@ vim.o.foldlevel = 99
 vim.o.background = "dark"
 vim.o.autoindent = true
 vim.o.termguicolors = true
+vim.o.colorcolumn = "80"
 
 vim.opt.completeopt:append({ "menu", "menuone", "noselect" })
 
