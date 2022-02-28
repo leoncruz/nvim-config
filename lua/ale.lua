@@ -15,8 +15,8 @@ vim.g.ale_fixers = {
 	['*'] = { 'remove_trailing_lines', 'trim_whitespace' },
 	python = { 'isort', 'black' },
 	elixir = { 'mix_format' },
-	javascript = { 'eslint' },
-	typescript = { 'eslint' },
+	javascript = { 'eslint', 'prettier' },
+	typescript = { 'eslint', 'prettier' },
   dart = { 'dart-format' },
 }
 
