@@ -76,3 +76,7 @@ require('lspconfig')['elixirls'].setup{
 	capabilities = capabilities;
   cmd = { "/home/leon/Programas/elixir-ls/language_server.sh" };
 }
+
+require("lspconfig")['cssls'].setup{
+	capabilities = capabilities
+}
