@@ -17,6 +17,7 @@ vim.g.ale_fixers = {
 	elixir = { 'mix_format' },
 	javascript = { 'eslint', 'prettier' },
 	typescript = { 'eslint', 'prettier' },
+	typescriptreact = { 'eslint', 'prettier' },
   dart = { 'dart-format' },
 }
 
