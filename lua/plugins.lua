@@ -13,6 +13,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'elixir-editors/vim-elixir'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
+	Plug ('iamcco/markdown-preview.nvim', {['do'] = 'cd app && yarn install'})
 
 	-- LSP
 	Plug 'w0rp/ale'
