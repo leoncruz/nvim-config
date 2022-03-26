@@ -2,7 +2,11 @@ local saga = require('lspsaga')
 local lualine = require('lualine')
 local nvim_tree = require('nvim-tree')
 
-saga.init_lsp_saga()
+saga.setup{
+	code_action_prompt 	= {
+		enable = false
+	}
+}
 
 lualine.setup({
 	options = {
