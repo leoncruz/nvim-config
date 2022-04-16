@@ -39,4 +39,5 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'ap/vim-css-color'
 	Plug 'APZelos/blamer.nvim'
 	Plug 'morhetz/gruvbox'
+	Plug 'goolord/alpha-nvim'
 vim.call('plug#end')
