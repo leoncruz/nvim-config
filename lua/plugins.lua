@@ -1,43 +1,43 @@
-local Plug = vim.fn['plug#']
+require('packer').startup(function(use)
+	use 'wbthomason/packer.nvim'
 
-vim.call('plug#begin', '~/.config/nvim/plugged')
--- Geral
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-commentary'
-Plug 'vim-test/vim-test'
-Plug 'akinsho/flutter-tools.nvim'
-Plug 'mattn/emmet-vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'sheerun/vim-polyglot'
-Plug 'elixir-editors/vim-elixir'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug('iamcco/markdown-preview.nvim', { ['do'] = 'cd app && yarn install' })
+	-- Geral
+	use 'tpope/vim-surround'
+	use 'tpope/vim-fugitive'
+	use 'tpope/vim-commentary'
+	use 'vim-test/vim-test'
+	use 'akinsho/flutter-tools.nvim'
+	use 'mattn/emmet-vim'
+	use 'jiangmiao/auto-pairs'
+	use 'sheerun/vim-polyglot'
+	use 'elixir-editors/vim-elixir'
+	use 'nvim-lua/plenary.nvim'
+	use 'nvim-telescope/telescope.nvim'
+	use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
 
--- LSP
-Plug 'w0rp/ale'
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
+	-- LSP
+	use 'w0rp/ale'
+	use 'neovim/nvim-lspconfig'
+	use 'williamboman/nvim-lsp-installer'
 
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
+	use 'hrsh7th/nvim-cmp'
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'hrsh7th/cmp-buffer'
 
-Plug 'tami5/lspsaga.nvim'
+	use 'tami5/lspsaga.nvim'
 
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+	use 'SirVer/ultisnips'
+	use 'honza/vim-snippets'
+	use 'quangnguyen30192/cmp-nvim-ultisnips'
 
--- UI
-Plug 'akinsho/bufferline.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'rcarriga/nvim-notify'
-Plug 'llewis6991ewis6991/gitsigns.nvim'
-Plug 'ap/vim-css-color'
-Plug 'morhetz/gruvbox'
-Plug 'goolord/alpha-nvim'
-vim.call('plug#end')
+	-- UI
+	use 'akinsho/bufferline.nvim'
+	use 'kyazdani42/nvim-web-devicons'
+	use 'kyazdani42/nvim-tree.lua'
+	use 'nvim-lualine/lualine.nvim'
+	use 'rcarriga/nvim-notify'
+	use 'lewis6991/gitsigns.nvim'
+	use 'ap/vim-css-color'
+	use 'morhetz/gruvbox'
+	use 'goolord/alpha-nvim'
+end)
