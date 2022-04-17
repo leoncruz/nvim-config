@@ -52,3 +52,10 @@ map("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>", { silent = true })
 map("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>", { silent = true })
 map("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>", { silent = true })
 map("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", { silent = true })
+
+-- Gitsigns
+map("n", "<leader>hs", ":Gitsigns stage_hunk<CR>", { silent = true })
+map("n", '<leader>hu', ":Gitsigns reset_hunk<CR>", { silent = true })
+map("n", '<leader>hp', ":Gitsigns preview_hunk<CR>", { silent = true })
+map("n", '[c', ":Gitsigns next_hunk<CR>", { silent = true })
+map("n", ']c', ":Gitsigns prev_hunk<CR>", { silent = true })

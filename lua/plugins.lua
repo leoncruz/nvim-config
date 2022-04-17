@@ -35,9 +35,8 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'kyazdani42/nvim-tree.lua'
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'rcarriga/nvim-notify'
-	Plug 'airblade/vim-gitgutter'
+	Plug 'llewis6991ewis6991/gitsigns.nvim'
 	Plug 'ap/vim-css-color'
-	Plug 'APZelos/blamer.nvim'
 	Plug 'morhetz/gruvbox'
 	Plug 'goolord/alpha-nvim'
 vim.call('plug#end')

@@ -57,3 +57,7 @@ alpha_theme.section.buttons.val = {
 }
 
 alpha.setup(alpha_theme.opts)
+
+gitsigns.setup {
+	current_line_blame = true,
+}
