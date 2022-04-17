@@ -1,42 +1,42 @@
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
-	-- Geral
-	Plug 'tpope/vim-surround'
-	Plug 'tpope/vim-fugitive'
-	Plug 'tpope/vim-commentary'
-	Plug 'vim-test/vim-test'
-	Plug 'akinsho/flutter-tools.nvim'
-	Plug 'mattn/emmet-vim'
-	Plug 'jiangmiao/auto-pairs'
-	Plug 'sheerun/vim-polyglot'
-	Plug 'elixir-editors/vim-elixir'
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-telescope/telescope.nvim'
-	Plug ('iamcco/markdown-preview.nvim', {['do'] = 'cd app && yarn install'})
+-- Geral
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'vim-test/vim-test'
+Plug 'akinsho/flutter-tools.nvim'
+Plug 'mattn/emmet-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
+Plug 'elixir-editors/vim-elixir'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug('iamcco/markdown-preview.nvim', { ['do'] = 'cd app && yarn install' })
 
-	-- LSP
-	Plug 'w0rp/ale'
-	Plug 'neovim/nvim-lspconfig'
+-- LSP
+Plug 'w0rp/ale'
+Plug 'neovim/nvim-lspconfig'
 
-	Plug 'hrsh7th/nvim-cmp'
-	Plug 'hrsh7th/cmp-nvim-lsp'
-	Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
 
-	Plug 'tami5/lspsaga.nvim'
+Plug 'tami5/lspsaga.nvim'
 
-	Plug 'SirVer/ultisnips'
-	Plug 'honza/vim-snippets'
-	Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
-	-- UI
-	Plug 'akinsho/bufferline.nvim'
-	Plug 'kyazdani42/nvim-web-devicons'
-	Plug 'kyazdani42/nvim-tree.lua'
-	Plug 'nvim-lualine/lualine.nvim'
-	Plug 'rcarriga/nvim-notify'
-	Plug 'llewis6991ewis6991/gitsigns.nvim'
-	Plug 'ap/vim-css-color'
-	Plug 'morhetz/gruvbox'
-	Plug 'goolord/alpha-nvim'
+-- UI
+Plug 'akinsho/bufferline.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'rcarriga/nvim-notify'
+Plug 'llewis6991ewis6991/gitsigns.nvim'
+Plug 'ap/vim-css-color'
+Plug 'morhetz/gruvbox'
+Plug 'goolord/alpha-nvim'
 vim.call('plug#end')

@@ -4,11 +4,11 @@ vim.g.ale_ruby_rubocop_executable = 'bundle'
 
 vim.g.ale_linters = {
 	ruby = { 'rubocop' },
- 	python = { 'pylint' },
- 	elixir = { 'mix_format' },
- 	javascript = { 'eslint' },
- 	typescript = { 'eslint' },
- 	dart = { 'dartls' }
+	python = { 'pylint' },
+	elixir = { 'mix_format' },
+	javascript = { 'eslint' },
+	typescript = { 'eslint' },
+	dart = { 'dartls' }
 }
 
 vim.g.ale_fixers = {
@@ -18,7 +18,7 @@ vim.g.ale_fixers = {
 	javascript = { 'eslint', 'prettier' },
 	typescript = { 'eslint', 'prettier' },
 	typescriptreact = { 'eslint', 'prettier' },
-  dart = { 'dart-format' },
+	dart = { 'dart-format' },
 }
 
 vim.g.ale_sign_error = ''

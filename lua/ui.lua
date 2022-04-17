@@ -4,10 +4,12 @@ local nvim_tree = require('nvim-tree')
 local bufferline = require('bufferline')
 local alpha = require('alpha')
 local alpha_theme = require('alpha.themes.dashboard')
+local gitsigns = require('gitsigns')
 
-saga.setup{
-	code_action_prompt 	= {
-		enable = false
+saga.setup {
+	code_action_prompt = {
+		enable = false,
+		sign = false
 	}
 }
 
@@ -34,7 +36,7 @@ nvim_tree.setup({
 
 vim.notify = require("notify")
 
-bufferline.setup{
+bufferline.setup {
 	options = {
 		mode = "tabs",
 		diagnostics = "nvim_lsp",
@@ -53,7 +55,7 @@ alpha_theme.section.buttons.val = {
 	alpha_theme.button("f g", "  Find word", '<cmd>Telescope live_grep<CR>'),
 	alpha_theme.button("f m", "  Jump to bookmarks"),
 	alpha_theme.button("s l", "  Open last session"),
-	alpha_theme.button('q', '  Quit NVIM' , ':qa<CR>'),
+	alpha_theme.button('q', '  Quit NVIM', ':qa<CR>'),
 }
 
 alpha.setup(alpha_theme.opts)
