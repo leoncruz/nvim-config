@@ -17,7 +17,6 @@ vim.opt.completeopt:append({ "menu", "menuone", "noselect" })
 
 vim.cmd([[ noswapfile ]])
 vim.cmd([[ colorscheme gruvbox ]])
-vim.cmd([[ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>") ]])
 
 -- vim-test configurations
 vim.g['test#strategy'] = "neovim"
