@@ -29,6 +29,7 @@ lualine.setup({
 })
 
 nvim_tree.setup({
+	update_cwd = true,
 	git = {
 		ignore = false
 	}
