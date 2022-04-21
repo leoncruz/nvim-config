@@ -21,9 +21,3 @@ vim.cmd([[ colorscheme gruvbox ]])
 -- vim-test configurations
 vim.g['test#strategy'] = "neovim"
 vim.g['test#preserve_screen'] = 1
-
--- blamer configurations
-vim.g.blamer_enabled = 1
-vim.g.blamer_delay = 500
-
-vim.g.UltiSnipsExpandTrigger = "<C-z>"

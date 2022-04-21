@@ -38,14 +38,28 @@ packer.startup {
 		-- LSP
 		use 'honza/vim-snippets'
 
-		use 'hrsh7th/nvim-cmp'
-		use 'hrsh7th/cmp-nvim-lsp'
-		use 'hrsh7th/cmp-buffer'
+		use({
+			'hrsh7th/nvim-cmp',
+			requires = {
+				{ 'hrsh7th/cmp-nvim-lsp' },
+				{ 'hrsh7th/cmp-nvim-lsp' },
+				{ 'hrsh7th/cmp-buffer' },
+				{ 'hrsh7th/cmp-path' },
+				{ 'hrsh7th/cmp-cmdline' },
+				{ 'hrsh7th/nvim-cmp' },
+				{ 'L3MON4D3/LuaSnip' },
+				{
+					'saadparwaiz1/cmp_luasnip',
+					config = function()
+						require('luasnip.loaders.from_vscode').lazy_load()
+						require 'luasnip'.filetype_extend('dart', { 'flutter' })
+					end
+				},
+				{ 'rafamadriz/friendly-snippets' }
+			}
+		})
 
 		use 'neovim/nvim-lspconfig'
-
-		use 'quangnguyen30192/cmp-nvim-ultisnips'
-		use 'SirVer/ultisnips'
 
 		use({ 'tami5/lspsaga.nvim', config = require_plugin('lspsaga') })
 
