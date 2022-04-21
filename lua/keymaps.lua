@@ -17,8 +17,8 @@ map("i", "<A-j>", "<Esc>:m+1<CR>==gi", {})
 map("i", "<A-k>", "<Esc>:m-2<CR>==gi", {})
 
 -- Terminal
-map("n", "<leader>T", "<cmd>tabnew term://fish<CR>", {})
-map("n", "<leader>b", "<cmd>belowright split term://fish<CR>", {})
+map("n", "<leader>T", "<cmd>tabnew | term<CR>", {})
+map("n", "<leader>b", "<cmd>belowright split | term<CR>", {})
 map("t", "ii", "<C-\\><C-N>", {})
 
 -- vim-test
