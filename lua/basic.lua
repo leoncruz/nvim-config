@@ -21,3 +21,5 @@ vim.cmd([[ colorscheme gruvbox ]])
 -- vim-test configurations
 vim.g['test#strategy'] = "neovim"
 vim.g['test#preserve_screen'] = 1
+
+vim.cmd [[ set signcolumn=yes ]]
