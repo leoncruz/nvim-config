@@ -70,7 +70,11 @@ packer.startup {
 		use({ 'tami5/lspsaga.nvim', config = require_plugin('lspsaga') })
 
 		use 'williamboman/nvim-lsp-installer'
-		use 'w0rp/ale'
+
+		use({
+			'w0rp/ale',
+			config = require_plugin('ale')
+		})
 
 		-- UI
 		use({ 'akinsho/bufferline.nvim', config = require_plugin('bufferline') })
