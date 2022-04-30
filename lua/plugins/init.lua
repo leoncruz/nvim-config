@@ -60,13 +60,11 @@ packer.startup {
 
 		use({
 			'neovim/nvim-lspconfig',
-			config = function()
-				vim.o.updatetime = 250
+			setup = function()
 				vim.diagnostic.config({
 					virtual_text = false,
 				})
 			end
-
 		})
 
 		use({ 'tami5/lspsaga.nvim', config = require_plugin('lspsaga') })
