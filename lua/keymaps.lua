@@ -31,7 +31,7 @@ map("v", "<leader>ca", ":<C-U>Lspsaga range_code_action<CR>", {})
 map("n", "<leader>ca", ":Lspsaga code_action<CR>", {})
 
 -- Telescope
-map("n", "<C-M-P>", ":Telescope live_grep<CR>", {})
+map("n", "<C-F>", ":Telescope live_grep<CR>", {})
 map("n", "<C-P>", ":Telescope find_files<CR>", {})
 
 -- Tab navigation
