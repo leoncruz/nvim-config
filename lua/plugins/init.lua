@@ -58,18 +58,9 @@ packer.startup {
 			}
 		})
 
-		use({
-			'neovim/nvim-lspconfig',
-			setup = function()
-				vim.diagnostic.config({
-					virtual_text = false,
-				})
-			end
-		})
+		use({ 'neovim/nvim-lspconfig' })
 
 		use({ 'tami5/lspsaga.nvim', config = require_plugin('lspsaga') })
-
-		use 'williamboman/nvim-lsp-installer'
 
 		use({
 			'w0rp/ale',
