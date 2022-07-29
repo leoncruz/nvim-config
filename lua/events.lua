@@ -1,8 +1,8 @@
-local create_autocmd  = vim.api.nvim_create_autocmd
-
 if vim.fn.has "nvim-0.7" then
+	local create_autocmd  = vim.api.nvim_create_autocmd
+
 	create_autocmd(
-		{ "VimEnter" },
+		{ "CursorHold" },
 		{ pattern = "*", command = "Lspsaga show_line_diagnostics" }
 	)
 
