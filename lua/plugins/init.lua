@@ -97,5 +97,7 @@ packer.startup {
 				vim.notify = require('notify')
 			end
 		})
+
+		use({ 'onsails/lspkind.nvim' })
 	end
 }
