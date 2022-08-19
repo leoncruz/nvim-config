@@ -87,7 +87,7 @@ packer.startup {
 			end
 		})
 
-		use 'morhetz/gruvbox'
+		use 'ellisonleao/gruvbox.nvim'
 
 		use { 'nvim-lualine/lualine.nvim', config = require_plugin('lualine'), }
 
