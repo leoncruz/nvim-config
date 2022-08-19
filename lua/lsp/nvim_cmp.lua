@@ -31,7 +31,7 @@ function M.setup()
 			}),
 			['<CR>'] = cmp.mapping.confirm({ select = false }),
 			['<C-n>'] = cmp.mapping.select_next_item(),
-			['<C-p>'] = cmp.mapping.select_prev_item(),
+			['<C-k>'] = cmp.mapping.select_prev_item(),
 		}),
 		sources = cmp.config.sources({
 			{ name = 'nvim_lsp' },
