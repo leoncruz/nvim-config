@@ -1,5 +1,5 @@
-require('plugins')
 require('basic')
+require('plugins')
 require('lsp')
 require('events')
 require('keymaps')
