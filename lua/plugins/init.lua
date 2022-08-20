@@ -70,7 +70,7 @@ packer.startup {
 		-- UI
 		use({ 'akinsho/bufferline.nvim', config = require_plugin('bufferline') })
 
-		use 'ap/vim-css-color'
+		use 'norcalli/nvim-colorizer.lua'
 
 		use({ 'goolord/alpha-nvim', config = require_plugin('alpha') })
 
