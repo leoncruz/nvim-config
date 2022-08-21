@@ -6,8 +6,6 @@ vim.g.ale_linters = {
 	ruby = { 'rubocop' },
 	python = { 'pylint' },
 	elixir = { 'mix_format' },
-	javascript = { 'eslint' },
-	typescript = { 'eslint' },
 	dart = { 'dartls' }
 }
 
@@ -15,9 +13,6 @@ vim.g.ale_fixers = {
 	['*'] = { 'remove_trailing_lines', 'trim_whitespace' },
 	python = { 'isort', 'black' },
 	elixir = { 'mix_format' },
-	javascript = { 'eslint', 'prettier' },
-	typescript = { 'eslint', 'prettier' },
-	typescriptreact = { 'eslint', 'prettier' },
 	dart = { 'dart-format' },
 }
 

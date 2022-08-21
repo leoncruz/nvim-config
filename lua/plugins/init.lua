@@ -64,6 +64,7 @@ packer.startup {
 
 		use({
 			'w0rp/ale',
+			ft = { 'python', 'ruby', 'dart', 'elixir' },
 			config = require_plugin('ale')
 		})
 
