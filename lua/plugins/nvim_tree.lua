@@ -3,6 +3,9 @@ return function()
 		update_cwd = true,
 		git = {
 			ignore = false
-		}
+		},
+		diagnostics = {
+			enable = true
+		},
 	}
 end
