@@ -26,6 +26,7 @@ vim.cmd [[
 	set smartindent
 	set softtabstop=2
 	set tabstop=2
+	set laststatus=3
 ]]
 
 -- vim-test configurations
