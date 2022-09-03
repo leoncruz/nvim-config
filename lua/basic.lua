@@ -19,6 +19,15 @@ vim.opt.completeopt:append({ "menu", "menuone", "noselect" })
 vim.cmd([[ noswapfile ]])
 vim.cmd([[ colorscheme gruvbox ]])
 
+vim.cmd [[
+	set autoindent
+	set expandtab
+	set shiftwidth=2
+	set smartindent
+	set softtabstop=2
+	set tabstop=2
+]]
+
 -- vim-test configurations
 vim.g['test#strategy'] = "neovim"
 vim.g['test#preserve_screen'] = 1
