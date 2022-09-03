@@ -48,3 +48,5 @@ lsp_config.elixirls.setup {
 lsp_config.tsserver.setup {
 	capabilities = cmp_capabilities
 }
+
+lsp_config.eslint.setup {}
