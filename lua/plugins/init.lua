@@ -19,7 +19,7 @@ packer.startup {
 
 		use({
 			'mattn/emmet-vim',
-			ft = { 'html', 'javascriptreact', 'javascript', 'typescriptreact' },
+			ft = { 'html', 'javascriptreact', 'javascript', 'typescriptreact', 'eelixir' },
 			config = function()
 				vim.cmd([[ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>") ]])
 			end
