@@ -12,6 +12,13 @@ if vim.fn.has "nvim-0.7" then
 	)
 
 	create_autocmd({ 'BufWritePre' }, { pattern = "*.tsx,*.ts,*.jsx,*.js", command = 'EslintFixAll' })
+
+	local path = vim.fn.stdpath('config') .. '/lua/plugins/init.lua'
+
+	create_autocmd(
+		{ 'BufWritePost' },
+		{ pattern = path, command = 'source <afile> | PackerCompile' }
+	)
 else
 	vim.cmd [[ autocmd VimEnter * :lua vim.diagnostic.config({ virtual_text = false }) ]]
 	vim.cmd [[ autocmd CursorHold * :Lspsaga show_line_diagnostics ]]
