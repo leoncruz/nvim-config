@@ -1,15 +1,13 @@
-local require_plugin = function(plugin_name)
-	return require('plugins.' .. plugin_name)
-end
-
 local packer = require 'packer'
+
+require 'plugins.settings'
 
 packer.startup {
 	function(use)
 		use 'wbthomason/packer.nvim'
 
 		-- Geral
-		use({ 'akinsho/flutter-tools.nvim', config = require_plugin('flutter_tools') })
+		use({ 'akinsho/flutter-tools.nvim' })
 
 		use 'elixir-editors/vim-elixir'
 
@@ -27,7 +25,7 @@ packer.startup {
 
 		use 'nvim-lua/plenary.nvim'
 
-		use({ 'nvim-telescope/telescope.nvim', config = require_plugin('telescope') })
+		use({ 'nvim-telescope/telescope.nvim' })
 
 		use 'sheerun/vim-polyglot'
 		use 'tpope/vim-surround'
@@ -47,35 +45,28 @@ packer.startup {
 				{ 'hrsh7th/cmp-cmdline' },
 				{ 'hrsh7th/nvim-cmp' },
 				{ 'L3MON4D3/LuaSnip' },
-				{
-					'saadparwaiz1/cmp_luasnip',
-					config = function()
-						require('luasnip.loaders.from_vscode').lazy_load()
-						require 'luasnip'.filetype_extend('dart', { 'flutter' })
-					end
-				},
+				{ 'saadparwaiz1/cmp_luasnip' },
 				{ 'rafamadriz/friendly-snippets' }
 			}
 		})
 
 		use({ 'neovim/nvim-lspconfig' })
 
-		use({ 'tami5/lspsaga.nvim', config = require_plugin('lspsaga') })
+		use({ 'tami5/lspsaga.nvim' })
 
 		use({
 			'w0rp/ale',
 			ft = { 'python', 'ruby', 'dart', 'elixir' },
-			config = require_plugin('ale')
 		})
 
 		-- UI
-		use({ 'akinsho/bufferline.nvim', config = require_plugin('bufferline') })
+		use({ 'akinsho/bufferline.nvim' })
 
 		use 'norcalli/nvim-colorizer.lua'
 
-		use({ 'goolord/alpha-nvim', config = require_plugin('alpha') })
+		use({ 'goolord/alpha-nvim' })
 
-		use({ 'kyazdani42/nvim-tree.lua', config = require_plugin('nvim_tree') })
+		use({ 'kyazdani42/nvim-tree.lua' })
 
 		use 'kyazdani42/nvim-web-devicons'
 
@@ -90,16 +81,10 @@ packer.startup {
 
 		use 'ellisonleao/gruvbox.nvim'
 
-		use { 'nvim-lualine/lualine.nvim', config = require_plugin('lualine'), }
+		use { 'nvim-lualine/lualine.nvim' }
 
 		use({
 			'rcarriga/nvim-notify',
-			config = function()
-				vim.notify = require('notify')
-				vim.notify.setup {
-					timeout = 1000
-				}
-			end
 		})
 
 		use({ 'onsails/lspkind.nvim' })

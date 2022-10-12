@@ -1,6 +1,17 @@
-local cmp = require('cmp')
-local luasnip = require('luasnip')
-local lspkind = require('lspkind')
+local cmp_ok, cmp = pcall(require, 'cmp')
+
+if not cmp_ok then return end
+
+local luasnip_ok, luasnip = pcall(require, 'luasnip')
+
+if not luasnip_ok then return end
+
+local lspkind_ok, lspkind = pcall(require, 'lspkind')
+
+if not lspkind_ok then return end
+
+require('luasnip.loaders.from_vscode').lazy_load()
+luasnip.filetype_extend('dart', { 'flutter' })
 
 local M = {}
 
