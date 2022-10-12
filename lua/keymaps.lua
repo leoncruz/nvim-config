@@ -27,8 +27,15 @@ map("n", "<leader>f", "<cmd>TestFile<CR>", {})
 map("n", "<leader>t", "<cmd>TestNearest<CR>", {})
 
 -- Lspsaga
-map("v", "<leader>ca", ":<C-U>Lspsaga range_code_action<CR>", {})
-map("n", "<leader>ca", ":Lspsaga code_action<CR>", {})
+map("v", "<leader>la", ":<C-U>Lspsaga range_code_action<CR>", {})
+map("n", "<leader>la", ":Lspsaga code_action<CR>", {})
+map("n", "<leader>lf", ":Lspsaga lsp_finder<CR>", {})
+map("n", "<leader>lr", ":Lspsaga rename<CR>", {})
+map("n", "<leader>ld", ":Lspsaga show_line_diagnostics<CR>", { })
+map("n", "<leader>lc", ":Lspsaga show_cursor_diagnostics<CR>", { })
+map("n", "<leader>lnd", ":Lspsaga diagnostic_jump_next<CR>", { })
+map("n", "<leader>lpd", ":Lspsaga diagnostic_jump_prev<CR>", { })
+map("n", "<leader>lh", ":Lspsaga signature_help<CR>", { })
 
 -- Telescope
 map("n", "<C-F>", ":Telescope live_grep<CR>", {})
@@ -45,9 +52,6 @@ map("n", "<M-7>", "7gt", {})
 map("n", "<M-8>", "8gt", {})
 map("n", "<M-9>", "9gt", {})
 map("n", "<M-0>", ":tablast", {})
-
--- LSP
-map("n", "gd", ":Lspsaga lsp_finder<CR>", {})
 
 -- Bufferline
 map("n", "<leader>e", ":BufferLineCycleNext<CR>", { silent = true })
