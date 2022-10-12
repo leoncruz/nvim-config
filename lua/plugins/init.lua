@@ -27,6 +27,8 @@ packer.startup {
 
 		use({ 'nvim-telescope/telescope.nvim' })
 
+		use 'natecraddock/workspaces.nvim'
+
 		use 'sheerun/vim-polyglot'
 		use 'tpope/vim-surround'
 		use 'tpope/vim-fugitive'

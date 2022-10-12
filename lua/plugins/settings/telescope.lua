@@ -13,5 +13,10 @@ telescope.setup {
 		find_files = {
 			hidden = true
 		}
+	},
+	extensions = {
+		workspaces = {}
 	}
 }
+
+telescope.load_extension('workspaces')
