@@ -3,10 +3,6 @@ local lsp_config = require('lspconfig')
 
 local cmp = require('lsp.nvim_cmp')
 
-vim.diagnostic.config({
-	virtual_text = false
-})
-
 cmp.setup()
 
 lsp_config.solargraph.setup {
