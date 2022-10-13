@@ -7,14 +7,18 @@ packer.startup {
 		use 'wbthomason/packer.nvim'
 
 		-- Geral
-		use({ 'akinsho/flutter-tools.nvim' })
-
+		use 'nvim-lua/plenary.nvim'
+		use 'nvim-telescope/telescope.nvim'
+		use 'natecraddock/workspaces.nvim'
+		use 'sheerun/vim-polyglot'
+		use 'tpope/vim-surround'
+		use 'tpope/vim-fugitive'
+		use 'tpope/vim-commentary'
+		use 'vim-test/vim-test'
+		use 'akinsho/flutter-tools.nvim'
 		use 'elixir-editors/vim-elixir'
-
 		use({ 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' })
-
 		use 'jiangmiao/auto-pairs'
-
 		use({
 			'mattn/emmet-vim',
 			ft = { 'html', 'javascriptreact', 'javascript', 'typescriptreact', 'eelixir' },
@@ -23,21 +27,8 @@ packer.startup {
 			end
 		})
 
-		use 'nvim-lua/plenary.nvim'
-
-		use({ 'nvim-telescope/telescope.nvim' })
-
-		use 'natecraddock/workspaces.nvim'
-
-		use 'sheerun/vim-polyglot'
-		use 'tpope/vim-surround'
-		use 'tpope/vim-fugitive'
-		use 'tpope/vim-commentary'
-		use 'vim-test/vim-test'
-
 		-- LSP
 		use 'honza/vim-snippets'
-
 		use({
 			'hrsh7th/nvim-cmp',
 			requires = {
@@ -52,26 +43,19 @@ packer.startup {
 			}
 		})
 
-		use({ 'neovim/nvim-lspconfig' })
-
-		use({ 'tami5/lspsaga.nvim' })
-
+		use 'neovim/nvim-lspconfig'
+		use 'kkharji/lspsaga.nvim'
 		use({
 			'w0rp/ale',
 			ft = { 'python', 'ruby', 'dart', 'elixir' },
 		})
 
 		-- UI
-		use({ 'akinsho/bufferline.nvim' })
-
+		use 'akinsho/bufferline.nvim'
 		use 'norcalli/nvim-colorizer.lua'
-
-		use({ 'goolord/alpha-nvim' })
-
-		use({ 'kyazdani42/nvim-tree.lua' })
-
+		use 'goolord/alpha-nvim'
+		use 'kyazdani42/nvim-tree.lua'
 		use 'kyazdani42/nvim-web-devicons'
-
 		use({
 			'lewis6991/gitsigns.nvim',
 			config = function()
@@ -82,13 +66,8 @@ packer.startup {
 		})
 
 		use 'ellisonleao/gruvbox.nvim'
-
-		use { 'nvim-lualine/lualine.nvim' }
-
-		use({
-			'rcarriga/nvim-notify',
-		})
-
-		use({ 'onsails/lspkind.nvim' })
+		use 'nvim-lualine/lualine.nvim'
+		use 'rcarriga/nvim-notify'
+		use 'onsails/lspkind.nvim'
 	end
 }
