@@ -7,6 +7,7 @@ packer.startup {
 		use 'wbthomason/packer.nvim'
 
 		-- Geral
+		use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 		use 'nvim-lua/plenary.nvim'
 		use 'nvim-telescope/telescope.nvim'
 		use 'natecraddock/workspaces.nvim'
