@@ -1,6 +1,6 @@
 local packer = require 'packer'
 
-require 'plugins.settings'
+require 'user.plugins.settings'
 
 packer.startup {
 	function(use)
