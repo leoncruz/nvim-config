@@ -10,7 +10,11 @@ treesitter.setup {
     'typescript',
     'dart',
     'elixir',
-    'python'
+    'python',
+    'html',
+    'css',
+    'eex',
+    'heex',
   },
   auto_install = true,
   highlight = {
