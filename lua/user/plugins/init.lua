@@ -22,7 +22,7 @@ packer.startup {
 		use 'jiangmiao/auto-pairs'
 		use({
 			'mattn/emmet-vim',
-			ft = { 'html', 'javascriptreact', 'javascript', 'typescriptreact', 'eelixir' },
+			ft = { 'html', 'javascriptreact', 'javascript', 'typescriptreact', 'eelixir', 'eruby' },
 			config = function()
 				vim.cmd([[ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>") ]])
 			end
