@@ -7,7 +7,8 @@ vim.g.ale_linters = {
 	elixir = { 'mix_format' },
 	javascript = { 'eslint' },
 	typescript = { 'eslint' },
-	dart = { 'dartls' }
+	dart = {},
+	ruby = {},
 }
 
 vim.g.ale_fixers = {
