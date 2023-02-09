@@ -41,18 +41,6 @@ map("n", "<leader>lh", ":Lspsaga signature_help<CR>", { })
 map("n", "<C-F>", ":Telescope live_grep<CR>", {})
 map("n", "<C-P>", ":Telescope find_files<CR>", {})
 
--- Tab navigation
-map("n", "<M-1>", "1gt", {})
-map("n", "<M-2>", "2gt", {})
-map("n", "<M-3>", "3gt", {})
-map("n", "<M-4>", "4gt", {})
-map("n", "<M-5>", "5gt", {})
-map("n", "<M-6>", "6gt", {})
-map("n", "<M-7>", "7gt", {})
-map("n", "<M-8>", "8gt", {})
-map("n", "<M-9>", "9gt", {})
-map("n", "<M-0>", ":tablast", {})
-
 -- Bufferline
 map("n", "<leader>e", ":BufferLineCycleNext<CR>", { silent = true })
 map("n", "<leader>q", ":BufferLineCyclePrev<CR>", { silent = true })
