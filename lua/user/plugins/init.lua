@@ -22,13 +22,15 @@ packer.startup {
 		use 'jiangmiao/auto-pairs'
 		use({
 			'mattn/emmet-vim',
-			ft = { 'html', 'javascriptreact', 'javascript', 'typescriptreact', 'eelixir', 'eruby' },
+			ft = { 'html', 'javascriptreact', 'javascript', 'typescriptreact', 'eelixir', 'eruby', 'elixir' },
 			config = function()
 				vim.cmd([[ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>") ]])
 			end
 		})
+		use 'mg979/vim-visual-multi'
 
 		-- LSP
+		use 'neovim/nvim-lspconfig'
 		use 'honza/vim-snippets'
 		use({
 			'hrsh7th/nvim-cmp',
@@ -43,12 +45,11 @@ packer.startup {
 				{ 'rafamadriz/friendly-snippets' }
 			}
 		})
-
-		use 'neovim/nvim-lspconfig'
+		use 'onsails/lspkind.nvim'
 		use 'kkharji/lspsaga.nvim'
 		use({
 			'w0rp/ale',
-			ft = { 'python', 'ruby', 'dart', 'elixir' },
+			ft = { 'python', 'ruby', 'dart', 'elixir', 'javascript', 'javascriptreact', 'typescriptreact', 'typescript' }
 		})
 
 		-- UI
@@ -65,10 +66,8 @@ packer.startup {
 				}
 			end
 		})
-
 		use 'ellisonleao/gruvbox.nvim'
 		use 'nvim-lualine/lualine.nvim'
 		use 'rcarriga/nvim-notify'
-		use 'onsails/lspkind.nvim'
 	end
 }
