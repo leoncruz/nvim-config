@@ -3,10 +3,10 @@ vim.g.ale_lint_on_save = 1
 vim.g.ale_echo_cursor = 0
 
 vim.g.ale_linters = {
-	python = { 'pylint' },
-	elixir = { 'mix_format' },
-	javascript = { 'eslint' },
-	typescript = { 'eslint' },
+	python = {},
+	elixir = {},
+	javascript = {},
+	typescript = {},
 	dart = {},
 	ruby = {},
 }
