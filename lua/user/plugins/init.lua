@@ -49,7 +49,7 @@ packer.startup {
 		use 'kkharji/lspsaga.nvim'
 		use({
 			'w0rp/ale',
-			ft = { 'python', 'ruby', 'dart', 'elixir', 'javascript', 'javascriptreact', 'typescriptreact', 'typescript' }
+			ft = { 'python', 'ruby', 'dart', 'elixir' }
 		})
 
 		-- UI
