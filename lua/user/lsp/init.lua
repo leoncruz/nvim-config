@@ -14,7 +14,7 @@ lsp_config.jedi_language_server.setup {
 	capabilities = cmp_capabilities
 }
 
-lsp_config.sumneko_lua.setup {
+lsp_config.lua_ls.setup {
 	capabilities = cmp_capabilities,
 	settings = {
 		Lua = {
