@@ -66,7 +66,7 @@ packer.startup {
 				}
 			end
 		})
-		use 'ellisonleao/gruvbox.nvim'
+		use 'luisiacc/gruvbox-baby'
 		use 'nvim-lualine/lualine.nvim'
 		use 'rcarriga/nvim-notify'
 	end

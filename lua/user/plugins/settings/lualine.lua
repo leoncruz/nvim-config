@@ -28,7 +28,7 @@ end
 
 lualine.setup {
 	options = {
-		theme = 'gruvbox_dark'
+		theme = 'gruvbox-baby'
 	},
 	sections = {
 		lualine_c = {

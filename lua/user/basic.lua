@@ -17,7 +17,7 @@ vim.opt.cursorline = true
 vim.opt.completeopt:append({ "menu", "menuone", "noselect" })
 
 vim.cmd([[ noswapfile ]])
-vim.cmd([[ colorscheme gruvbox ]])
+vim.cmd([[ colorscheme gruvbox-baby ]])
 
 vim.cmd [[
 	set autoindent
