@@ -15,6 +15,7 @@ treesitter.setup {
     'css',
     'eex',
     'heex',
+    'go'
   },
   auto_install = true,
   highlight = {
