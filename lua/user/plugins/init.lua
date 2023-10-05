@@ -66,7 +66,7 @@ packer.startup {
 				}
 			end
 		})
-		use 'luisiacc/gruvbox-baby'
+		use 'navarasu/onedark.nvim'
 		use 'nvim-lualine/lualine.nvim'
 		use 'rcarriga/nvim-notify'
 	end
