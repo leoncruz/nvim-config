@@ -58,3 +58,8 @@ lsp_config.tailwindcss.setup {
 lsp_config.gopls.setup {
 	capabilities = cmp_capabilities
 }
+
+lsp_config.crystalline.setup {
+	cmd = { 'crystalline' },
+	capabilities = cmp_capabilities
+}
