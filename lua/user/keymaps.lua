@@ -61,7 +61,3 @@ map("n", '<leader>hu', ":Gitsigns reset_hunk<CR>", { silent = true })
 map("n", '<leader>hp', ":Gitsigns preview_hunk<CR>", { silent = true })
 map("n", '[c', ":Gitsigns next_hunk<CR>", { silent = true })
 map("n", ']c', ":Gitsigns prev_hunk<CR>", { silent = true })
-
--- Workspaces
-map("n", "<leader>wl", ":Telescope workspaces<CR>", { silent = true })
-map("n", "<leader>wa", ":WorkspacesAdd<CR>", { silent = true })

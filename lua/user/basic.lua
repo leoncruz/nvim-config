@@ -4,6 +4,7 @@ vim.g.mapleader = ' '
 vim.g.python3_host_prog = '~/.asdf/shims/python'
 
 vim.o.number = true
+vim.o.relativenumber = true
 vim.encoding = "UTF-8"
 vim.o.clipboard = "unnamedplus"
 vim.o.foldmethod = "indent"
@@ -13,11 +14,11 @@ vim.o.autoindent = true
 vim.o.termguicolors = true
 vim.o.colorcolumn = "80,120"
 vim.opt.cursorline = true
+vim.opt.backspace = 'indent,eol,start'
 
 vim.opt.completeopt:append({ "menu", "menuone", "noselect" })
 
-vim.cmd([[ noswapfile ]])
-vim.cmd([[ colorscheme onedark ]])
+vim.opt.swapfile = false
 
 vim.cmd [[
 	set autoindent
@@ -33,4 +34,14 @@ vim.cmd [[
 vim.g['test#strategy'] = "neovim"
 vim.g['test#preserve_screen'] = 1
 
-vim.cmd [[ set signcolumn=yes ]]
+vim.opt.signcolumn = 'yes'
+
+vim.api.nvim_create_autocmd({ 'BufWritePre' }, {
+	pattern = { '*' },
+	command = [[%s/\s\+$//e]],
+})
+
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+	pattern = { '*.heex' },
+	command = [[ set filetype=eelixir ]],
+})

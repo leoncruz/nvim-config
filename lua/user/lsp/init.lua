@@ -47,7 +47,7 @@ lsp_config.tsserver.setup {
 
 lsp_config.eslint.setup {
 	on_attach = function()
-		vim.api.nvim_create_autocmd({'BufWritePre' }, { pattern = {"*.js", "*.ts", "*.tsx", "*.jsx", "*.vue"}, command = "EslintFixAll" })
+		-- vim.api.nvim_create_autocmd({'BufWritePre' }, { pattern = {"*.js", "*.ts", "*.tsx", "*.jsx", "*.vue"}, command = "EslintFixAll" })
 	end
 }
 
