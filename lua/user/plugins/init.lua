@@ -1,16 +1,16 @@
 return {
   -- General,
-   'nvim-lua/plenary.nvim',
-   'tpope/vim-surround',
-   'tpope/vim-fugitive',
-   'tpope/vim-commentary',
-   'vim-test/vim-test',
-   'jiangmiao/auto-pairs',
-   'mg979/vim-visual-multi',
+  'nvim-lua/plenary.nvim',
+  'tpope/vim-surround',
+  'tpope/vim-fugitive',
+  'tpope/vim-commentary',
+  'vim-test/vim-test',
+  'jiangmiao/auto-pairs',
+  'mg979/vim-visual-multi',
 
   -- LSP,
-   'neovim/nvim-lspconfig',
+  'neovim/nvim-lspconfig',
 
   -- UI,
-   'norcalli/nvim-colorizer.lua',
+  'norcalli/nvim-colorizer.lua',
 }

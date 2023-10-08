@@ -2,7 +2,6 @@ local map = vim.api.nvim_set_keymap
 
 -- Geral
 map("n", "<C-A>", "<cmd>NvimTreeToggle<CR>", {})
-map("n", "<leader>v", "<cmd>VisitTestFile<CR>", {})
 map("n", "<C-[>", "<ESC>", {})
 map("v", "<C-[>", "<ESC>", {})
 
@@ -31,11 +30,11 @@ map("v", "<leader>la", ":<C-U>Lspsaga range_code_action<CR>", {})
 map("n", "<leader>la", ":Lspsaga code_action<CR>", {})
 map("n", "<leader>lf", ":Lspsaga lsp_finder<CR>", {})
 map("n", "<leader>lr", ":Lspsaga rename<CR>", {})
-map("n", "<leader>ld", ":Lspsaga show_line_diagnostics<CR>", { })
-map("n", "<leader>lc", ":Lspsaga show_cursor_diagnostics<CR>", { })
-map("n", "<leader>lnd", ":Lspsaga diagnostic_jump_next<CR>", { })
-map("n", "<leader>lpd", ":Lspsaga diagnostic_jump_prev<CR>", { })
-map("n", "<leader>lh", ":Lspsaga signature_help<CR>", { })
+map("n", "<leader>ld", ":Lspsaga show_line_diagnostics<CR>", {})
+map("n", "<leader>lc", ":Lspsaga show_cursor_diagnostics<CR>", {})
+map("n", "<leader>lnd", ":Lspsaga diagnostic_jump_next<CR>", {})
+map("n", "<leader>lpd", ":Lspsaga diagnostic_jump_prev<CR>", {})
+map("n", "<leader>lh", ":Lspsaga signature_help<CR>", {})
 
 -- Telescope
 map("n", "<C-F>", ":Telescope live_grep<CR>", {})

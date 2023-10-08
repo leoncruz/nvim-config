@@ -1,4 +1,4 @@
 return {
-	'sheerun/vim-polyglot',
+  'sheerun/vim-polyglot',
   event = { 'BufReadPre', 'BufNewFile' },
 }

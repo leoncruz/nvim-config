@@ -36,11 +36,6 @@ vim.g['test#preserve_screen'] = 1
 
 vim.opt.signcolumn = 'yes'
 
-vim.api.nvim_create_autocmd({ 'BufWritePre' }, {
-	pattern = { '*' },
-	command = [[%s/\s\+$//e]],
-})
-
 vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
 	pattern = { '*.heex' },
 	command = [[ set filetype=eelixir ]],
