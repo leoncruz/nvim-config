@@ -45,11 +45,7 @@ lsp_config.tsserver.setup {
 	capabilities = cmp_capabilities
 }
 
-lsp_config.eslint.setup {
-	on_attach = function()
-		-- vim.api.nvim_create_autocmd({'BufWritePre' }, { pattern = {"*.js", "*.ts", "*.tsx", "*.jsx", "*.vue"}, command = "EslintFixAll" })
-	end
-}
+lsp_config.eslint.setup {}
 
 lsp_config.tailwindcss.setup {
 	capabilities = cmp_capabilities
